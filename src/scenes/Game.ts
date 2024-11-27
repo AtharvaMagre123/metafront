@@ -311,7 +311,7 @@ export default class Game extends Phaser.Scene {
 
   
       //Websocket Logic
-      this.socket = new WebSocket("ws://localhost:3000");
+      this.socket = new WebSocket("wss://metaback-9yoq.onrender.com");
       this.socket.onmessage = (event) => {
         const message = JSON.parse(event.data);
       
